@@ -492,19 +492,15 @@ a {
   width: 100%;
   max-width: 100%;
 }
-@media screen and (max-width: 1050px) {
-  .header {
-    width: 1000px;
-    margin: auto;
-  }
-}
 .header .top {
   display: flex;
   justify-content: space-between;
   padding: 50px 10px;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (min-width: 1050px) {
   .header .top {
+    width: 1000px;
+    margin: auto;
     padding: 20px 10px;
   }
 }
@@ -775,6 +771,11 @@ a {
   padding-bottom: 20px;
 }
 @media screen and (min-width: 1050px) {
+  .footer .intersted .left p {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1050px) {
   .footer .intersted .right {
     display: flex;
     align-items: center;
@@ -796,12 +797,14 @@ a {
   .footer .articles {
     width: 700px;
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1050px) {
-  .footer .articles {
-    display: flex;
-    flex-direction: row;
+  .footer .articles article {
+    width: 100%;
   }
 }
 .footer .articles article h3 {
