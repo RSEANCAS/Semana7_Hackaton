@@ -1,0 +1,18 @@
+@mixin autor {
+    font-weight: bold;
+    padding: 10px 0px;
+    color: var(--text-color-darkblue);
+}
+
+@mixin date {
+    color: var(--text-color-darkblue);
+    opacity: 0.6;
+}
+
+@mixin shared {
+    display: flex;
+    justify-content: flex-end;
+    li {
+        padding: 0px 10px;
+    }
+}

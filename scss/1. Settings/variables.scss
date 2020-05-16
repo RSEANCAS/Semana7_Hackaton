@@ -1,0 +1,39 @@
+// RUTAS
+$path-font: '../fonts';
+// DIMENSIONES
+$desktop-portrait-maxwidth: 1050px;
+$desktop-portrait-maxheight: 820px;
+$mobile-portrait-maxwidth: 480px;
+$mobile-portrait-maxheight: 320px;
+//FONDO-COLORES
+$bg-color-graylight: #F4F4F4;
+$bg-color-degrade-skyblue: linear-gradient(255.16deg, #98D0FC 2.46%, #3481D7 93.24%);
+$bg-color-darkblue: #316099;
+$bg-color-blue: #5A98D0;
+//TEXTO-COLORES
+$text-color-black: black;
+$text-color-white: white;
+$text-color-blue: #356EAD;
+$text-color-darkblue: #1F3F68;
+// FONTS
+$font-family: 'Jost';
+:root {
+    --desktop-portrait-maxwidth: #{$desktop-portrait-maxwidth};
+    --desktop-portrait-maxheight: #{$desktop-portrait-maxheight};
+    --mobile-portrait-maxwidth: #{$mobile-portrait-maxwidth};
+    --mobile-portrait-maxheight: #{$mobile-portrait-maxheight};
+    --bg-color-degrade-skyblue: #{$bg-color-degrade-skyblue};
+    --bg-color-graylight: #{$bg-color-graylight};
+    --bg-color-blue: #{$bg-color-blue};
+    --bg-color-darkblue: #{$bg-color-darkblue};
+    --text-color-black: #{$text-color-black};
+    --text-color-white: #{$text-color-white};
+    --text-color-blue: #{$text-color-blue};
+    --text-color-darkblue: #{$text-color-darkblue};
+}
+
+* {
+    font-family: #{$font-family} !important;
+    font-size: 0.9rem;
+    box-sizing: border-box !important;
+}

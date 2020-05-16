@@ -1,0 +1,90 @@
+.footer {
+    color: var(--text-color-white);
+    .background {
+        background-color: var(--bg-color-darkblue);
+        border-radius: 0px 150px 0px 0px;
+        width: 95%;
+        height: 140%;
+        position: absolute;
+        z-index: -1;
+        @media screen and (min-width: #{$desktop-portrait-maxwidth}) {
+            height: 75%;
+        }
+    }
+    .intersted {
+        padding: 20px 50px 20px 20px;
+        @media screen and (min-width: #{$desktop-portrait-maxwidth}) {
+            width: 700px;
+            margin: auto;
+            display: flex;
+        }
+        .left {
+            @media screen and (min-width: #{$desktop-portrait-maxwidth}) {
+                width: 70%;
+            }
+            h2 {
+                font-size: 1.5rem;
+                width: 70%;
+                padding: 20px 0px;
+                @media screen and (min-width: #{$desktop-portrait-maxwidth}) {
+                    padding: 20px
+                }
+            }
+            p {
+                opacity: 0.6;
+                line-height: 20px;
+                padding-bottom: 20px;
+            }
+        }
+        .right {
+            @media screen and (min-width: #{$desktop-portrait-maxwidth}) {
+                display: flex;
+                align-items: center;
+                width: 30%;
+            }
+            a {
+                background-color: var(--bg-color-blue);
+                color: var(--text-color-white);
+                display: flex;
+                width: 100%;
+                padding: 20px;
+                justify-content: center;
+            }
+        }
+    }
+    .articles {
+        padding: 20px;
+        @media screen and (min-width: #{$desktop-portrait-maxwidth}) {
+            width: 700px;
+            margin: auto;
+        }
+        @media screen and (min-width: #{$desktop-portrait-maxwidth}) {
+            display: flex;
+            flex-direction: row;
+        }
+        article {
+            h3 {
+                font-weight: bold;
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                li {
+                    padding: 10px 0px;
+                    opacity: 0.8;
+                    a {
+                        color: var(--text-color-white);
+                    }
+                }
+            }
+        }
+    }
+    p {
+        opacity: 0.5;
+        padding: 10px 20px;
+        @media screen and (min-width: #{$desktop-portrait-maxwidth}) {
+            width: 700px;
+            margin: auto;
+        }
+    }
+}
